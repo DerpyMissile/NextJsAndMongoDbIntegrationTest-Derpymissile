@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps<TopProps> = async () => {
            .collection("movies")
            .find({})
            .sort({ metacritic: -1 })
-           .limit(1000)
+           .limit(100)
            .toArray();
 
 
